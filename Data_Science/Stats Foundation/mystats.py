@@ -53,3 +53,47 @@ def interpret_ci(ci_low, ci_high):
         print('Confidence Interval contains 0. (fail to reject H0)')
     else:
         print('Confidence Interval does not contain 0. (reject H0)')
+
+def my_ttest(mu_1, s_1, n_1, mu_2, s_2, n_2, alpha=0.05):
+    # Two Sample T Test
+    from scipy import stats
+
+    # General Stats
+
+    ## Sample Data 1
+    data1 = stats.t.rvs(loc=mu_1, scale=s_1, df=(n_1-1), size=n_1)
+
+    ## Sample Data 2
+    data2 = stats.t.rvs(loc=mu_1, scale=s_1, df=(n_1-1), size=n_1)
+
+
+    df_ = n_1 + n_2 - 2
+    alpha = alpha
+
+    # plot distribution for normality
+    mystats.descriptive_statistics_plots(data1)
+    mystats.descriptive_statistics_plots(data2)
+
+
+    # tt = (sm-m)/np.sqrt(sv/float(n))  # t-statistic for mean
+    tt = (mu_1 - mu_2) / (np.sqrt(((s_1**2)/n_1) + ((s_2**2)/n_2)))
+    print("T Test Score: ", tt)
+
+    #Studnt, n=14, p<0.05, 2-tail
+    t_crit = stats.t.ppf(1-alpha/2, df_)
+    print("T Critical Value: ", t_crit)
+
+    # p value two sided 
+    pval = stats.t.sf(np.abs(tt), df_)*2
+    print("p-value: ", pval)
+
+    # confidence interval
+        ## Pooled Standard Deviaiton
+    sp = np.sqrt((((n_1-1)*(s_1**2)) + ((n_2-1)*(s_2**2)))/df_ ) # pooled variance (ratio of variances is less than 1)
+    se = sp * np.sqrt((1/n_1 + 1/n_2))
+
+    diff_ = mu_1 - mu_2
+
+    ci_low = diff_ - (t_crit * se)
+    ci_high = diff_ + (t_crit * se)
+    print("Confidence Interval from: %.3f to %.3f" % (ci_low, ci_high))
