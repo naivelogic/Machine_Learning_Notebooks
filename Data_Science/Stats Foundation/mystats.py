@@ -1,3 +1,9 @@
+#################
+# This is a set of statistical functions that I used to perform statistical inference 
+# including: 
+# - normality testing with Hist, QQ Plots and Boxplots
+# - Hypothesis testing: T-test, ANOVA and interpretation of CI and Pvalue
+
 import numpy as np
 # Data Visualization
 import seaborn as sns
