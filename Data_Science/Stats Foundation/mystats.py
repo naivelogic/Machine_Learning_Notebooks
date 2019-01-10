@@ -41,6 +41,11 @@ def descriptive_statistics_plots(data):
     plt.title('Boxplot of Weight Dist')
     plt.boxplot(data)
 
+    #####  QQ / Normal Probability Plots   #######
+    ## The nromal probability plot is a graphical technique to identify substantive departures from normality
+    ## It is based on the comparision between the observed deistribution and the theoretical distributions
+    ## .. under the normal assumption. 
+    ## The null hypothesis (normal distribution) is rejected if the points are ont aligned on a stright line
     plt.subplot(2, 2, 2)
     plt.title('QQ plot')
     import scipy.stats as stats
