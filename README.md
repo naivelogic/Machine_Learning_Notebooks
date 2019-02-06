@@ -5,3 +5,6 @@
 Welcome to my collection of Data Science and Machine Learning Notebooks in Python. 
 
 > as of Oct. 2018, I am taking a more statistical inferntial focus on applying ML to various datasets. 
+
+__Data Science Laboratories__
+- [x] LAB1 - **Multiple Linear Regression**
