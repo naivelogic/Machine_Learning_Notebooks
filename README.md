@@ -8,3 +8,7 @@ Welcome to my collection of Data Science and Machine Learning Notebooks in Pytho
 
 __Data Science Laboratories__
 - [x] LAB1 - **Multiple Linear Regression**
+
+
+__Kaggle__
+* [x] [Kobe Shooting Prediction](https://github.com/naivelogic/Machine_Learning_Notebooks/tree/master/kaggle/kobe) (score: 0.748 8/19)
