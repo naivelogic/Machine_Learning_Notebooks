@@ -11,4 +11,4 @@ __Data Science Laboratories__
 
 
 __Kaggle__
-* [x] [Kobe Shooting Prediction](https://github.com/naivelogic/Machine_Learning_Notebooks/tree/master/kaggle/kobe) (score: 0.748 8/19)
+* [x] [Kobe Shooting Prediction](https://github.com/naivelogic/Machine_Learning_Notebooks/tree/master/kaggle/kobe)  | [notebook](https://naivelogic.github.io/Machine_Learning_Notebooks/kaggle/kobe/Kobe%20Capstone%20EDA%20and%20Modeling.html) | score: 0.748 8/19
