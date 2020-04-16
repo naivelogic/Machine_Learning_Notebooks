@@ -12,3 +12,5 @@
 
 Data from Kaggle
 https://www.kaggle.com/c/kobe-bryant-shot-selection
+
+![](https://github.com/naivelogic/Machine_Learning_Notebooks/blob/master/kaggle/kobe/Kobe3DShotMap/data/kobe_3d_shot_map.png)
