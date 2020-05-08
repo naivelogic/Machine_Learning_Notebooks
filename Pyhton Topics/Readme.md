@@ -1,0 +1,2 @@
+> Keep the code simple, not the data
+>It is better to have a lot of simple iterable functions that work over sequences of values than a complex function that computes the result for one value at a time.
